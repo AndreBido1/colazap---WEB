@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <title>ColaZap</title>
+</head>
+<body>
+    <style>
+                 body {
+            margin: 0;
+            padding: 0;
+            background-color: #7abcff; 
+            font-family: Arial, sans-serif; 
+        }
+
+        .pag-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container-login {
+            background-color: #ffffff; 
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container-login input[type="text"],
+        .container-login input[type="password"] {
+            margin-bottom: 15px; 
+            padding: 10px;
+            width: 100%; 
+            border: 1px solid #ced4da; 
+        }
+
+        .container-login button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff; 
+            border: none;
+            border-radius: 5px;
+            color: #ffffff; 
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+        }
+
+        .container-login button[type="submit"]:hover {
+            background-color: #0056b3; 
+        }
+
+        .container-login h2 {
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+
+        .navbar-brand {
+            font-weight: bold; 
+        }
+    </style>
+
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">ColaZap</a>
+          </nav>
+    </header>
+    <section class="pag-login">
+        <div class="container-login">
+
+            <h2>Faça Login</h2>
+            <form method="post" action="/login">
+                <p>Telefone</p>
+                <input type="text" name="telefone">
+                <p>Senha</p>
+                <input type="password" name="senha">
+                <button type="submit" name="resultado">Logar</button>
+            </form>
+
+
+        </div>
+    </section>
+</body>
+</html>
